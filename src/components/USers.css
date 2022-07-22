@@ -1,0 +1,17 @@
+.users ul {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.users ul li {
+    list-style-type: none;
+    border: solid 1px #333;
+    padding: 1rem;
+    box-shadow: 10px 5px 5px rgb(70, 65, 65);
+}
+
+.users div {
+
+    text-align: left;
+}
