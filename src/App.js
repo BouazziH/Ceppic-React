@@ -8,7 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Randomuser from "./components/Randomuser";
 import Nav from "./components/Nav";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Contact from "./pages/ContactForm";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
