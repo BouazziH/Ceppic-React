@@ -1,29 +1,34 @@
+import axios from "axios";
 import { useState } from "react";
 
 export default function Contact() {
   const [nom, setNom] = useState();
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
-const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
-const handelSubmit = (event) => {
-    /* c'est pour dire au formulaire ne pas recharger la page preventDefault() */
+  const handelSubmit = (event) => {
+    /* c'est pour dire au formulaire ne pas recharger la page on utilisant  preventDefault() */
     event.preventDefault();
-    const contacts = {nom,email,message};
-    console.log(contacts);
+    const contacts = { nom, email, message };
+    //console.log(contacts);
+axios.post("http://localhost:4000/contacts",contacts).then((reponse) =>{
+    console.log(reponse);
     setSubmitted(true);
-}
-if(submitted){
-    return(
-        <>
-        <p>
-            Merci de votre message.
-        </p>
-        </>
-    )
-}
+} )
+.catch((error) => {
+    console.log(error);
+});
 
 
+  };
+  if (submitted) {
+    return (
+      <>
+        <p>Merci de votre message.</p>
+      </>
+    );
+  }
 
   return (
     <div className="contact">

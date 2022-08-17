@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Contact from "./pages/ContactForm";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import ListMessage from "./pages/ListMessage";
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="list" element={<ListMessage />} />
         <Route path="*" element={<NotFound />} />
       </Routes> 
       <Header title="logo" text="React JS" />

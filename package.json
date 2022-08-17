@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "contact-server": "npx json-server --port 4000 --watch ./src/data/dbContact.json"
   },
   "eslintConfig": {
     "extends": [

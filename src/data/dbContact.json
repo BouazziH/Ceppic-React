@@ -1,12 +1,28 @@
-
 {
-"contacts": [
-
+  "contacts": [
     {
-"nom":"",
-"email":"",
-"message":"",
-"id":1
+      "nom": "",
+      "email": "",
+      "message": "",
+      "id": 1
+    },
+    {
+      "nom": "Hamza",
+      "email": "bouazzicdi@gmail.com",
+      "message": "hello!!!",
+      "id": 2
+    },
+    {
+      "nom": "Bouazzi",
+      "email": "aaa@tt.fr",
+      "message": "Message",
+      "id": 3
+    },
+    {
+      "nom": "toto",
+      "email": "toto@gmail.com",
+      "message": "Hi toto",
+      "id": 4
     }
-]
+  ]
 }
